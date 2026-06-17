@@ -1,25 +1,26 @@
 export const personalInfo = {
   name: 'Karthik Madgula',
-  title: 'Software Engineer',
+  title: 'Full-Stack Developer',
   roles: [
+    'Full-Stack Developer',
     'Backend Engineer',
-    'Cloud & DevOps Specialist',
     'FastAPI Developer',
+    'React Frontend Developer',
+    'Cloud & DevOps Specialist',
     'API Architect',
-    'Microservices Builder',
   ],
   email: 'karthikmadgula1808@gmail.com',
   phone: '+91-6305690466',
   linkedin: 'https://www.linkedin.com/in/karthik-madgula-8a260029b/',
   location: 'Hyderabad, India',
   summary:
-    'Backend and cloud-oriented Software Engineer with production experience building, containerizing, and deploying FastAPI microservices. Hands-on with Docker, CI/CD-aligned deployments, REST API development, and data ingestion/validation pipelines. Experienced implementing JWT security and health-check monitoring. Actively building cloud-native / DevOps skills (GCP, Kubernetes, Terraform).',
+    'Full-stack developer with strong, production-proven backend experience building scalable FastAPI services, RESTful APIs, and real-time data pipelines — paired with a growing frontend skill set in React and modern JavaScript. Hands-on with Python, PostgreSQL, Redis, Docker, JWT authentication, and API design for frontend consumption (JSON contracts, CORS, dashboards). Seeking a full-stack role to build end-to-end, well-architected web applications.',
 };
 
 export const stats = [
   { label: 'Years Experience', value: '1+', icon: '⚡' },
   { label: 'Production Projects', value: '3+', icon: '🚀' },
-  { label: 'Technologies Used', value: '20+', icon: '🔧' },
+  { label: 'Technologies Used', value: '25+', icon: '🔧' },
   { label: 'Academic CGPA', value: '8.63', icon: '🎓' },
 ];
 
@@ -32,6 +33,16 @@ export const skillCategories = [
     skills: [
       'Python', 'FastAPI', 'RESTful APIs', 'Microservices',
       'Async Programming', 'JWT Auth', 'CORS', 'WebSockets', 'ORJSON',
+    ],
+  },
+  {
+    id: 'frontend',
+    label: 'Frontend',
+    emoji: '🎨',
+    color: 'blue',
+    skills: [
+      'React', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS',
+      'Responsive UI', 'REST / JSON API Integration',
     ],
   },
   {
@@ -75,6 +86,16 @@ export const skillCategories = [
     ],
   },
   {
+    id: 'fundamentals',
+    label: 'CS Fundamentals',
+    emoji: '📐',
+    color: 'cyan',
+    skills: [
+      'Data Structures', 'Algorithms', 'OOP / OOD',
+      'DBMS', 'System Design Basics',
+    ],
+  },
+  {
     id: 'embedded',
     label: 'Embedded & VLSI',
     emoji: '🔌',
@@ -84,12 +105,22 @@ export const skillCategories = [
       'I2C / UART / SPI', 'GPIO / ADC / Timers', 'Verilog HDL', 'FPGA',
     ],
   },
+  {
+    id: 'learning',
+    label: 'Currently Learning',
+    emoji: '📈',
+    color: 'orange',
+    skills: [
+      'Java', 'C++', 'Oracle Cloud (OCI)',
+      'GCP', 'Kubernetes', 'Terraform',
+    ],
+  },
 ];
 
 export const experience = [
   {
     company: 'Purview India Consulting and Services LLP',
-    role: 'Software Associate — Backend & DevOps',
+    role: 'Software Associate — Backend / Full-Stack Developer',
     period: 'Aug 2025 – Present',
     location: 'Hyderabad, India (On-site)',
     projects: [
@@ -104,7 +135,8 @@ export const experience = [
           'Built data ingestion, transformation, and validation pipelines for telemetry sourced via Wialon APIs.',
           'Engineered async REST APIs backed by PostgreSQL and Redis to serve real-time and historical telemetry at scale.',
           'Built endpoints powering analytics dashboards, operational reports, live alerts, and fuel-consumption analysis.',
-          'Secured APIs with JWT authentication, CORS, health-check endpoints, and RabbitMQ async task processing.',
+          'Designed clean JSON API contracts and configured CORS for smooth frontend–backend integration with web dashboards.',
+          'Secured APIs with JWT authentication, health-check endpoints, and RabbitMQ async task processing.',
         ],
         tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker', 'JWT'],
       },
@@ -115,8 +147,8 @@ export const experience = [
         description:
           'Large-scale multi-source, multilingual news aggregation platform with advanced filtering and real-time delivery.',
         bullets: [
-          'Built REST APIs for multi-source, multilingual article ingestion, search, filtering, and content delivery.',
-          'Designed hash-based deduplication (title + URL hashing) to prevent duplicate entries in PostgreSQL.',
+          'Developed REST APIs for multi-source, multilingual article ingestion, search, filtering, and content delivery consumed by web frontends.',
+          'Implemented advanced filtering (date, category, source, title search) and hash-based deduplication (title + URL hashing) to prevent duplicate entries in PostgreSQL.',
           'Implemented JWT-secured access (access + refresh tokens) and background schedulers for maintenance.',
           'Deployed to production on IIS with SSL using Docker-containerized services.',
           'Improved API throughput and response times using Redis caching and ORJSON serialization.',
@@ -125,15 +157,15 @@ export const experience = [
       },
       {
         name: 'CallOHM — Voice AI Agent Builder Platform',
-        url: null,
+        url: 'callohm.com',
         emoji: '🤖',
         description:
-          'Internal no-code platform for building and deploying custom voice AI agents with multi-step call-flow configuration.',
+          'No-code platform for building and deploying custom voice AI agents with a multi-step call-flow configuration dashboard.',
         bullets: [
-          'Built FastAPI services powering end-to-end real-time telephony pipeline (streaming ASR → LLM → TTS) achieving sub-second turn latency.',
+          'Built FastAPI backend with REST and WebSocket APIs powering an end-to-end real-time telephony pipeline (streaming ASR → LLM → TTS) achieving sub-second turn latency.',
           'Implemented Bring Your Own Key (BYOK) for OpenAI, Gemini, and other LLM providers with secure key management.',
           'Developed integrations enabling voice agents to connect with WhatsApp, email, and webhooks from a single dashboard.',
-          'Containerized backend microservices with Docker for multi-step call-flow configuration.',
+          'Containerized backend microservices with Docker for the no-code multi-step call-flow configuration.',
         ],
         tech: ['Python', 'FastAPI', 'PostgreSQL', 'OpenAI / Gemini APIs', 'ASR/TTS', 'WebSockets', 'Docker'],
       },

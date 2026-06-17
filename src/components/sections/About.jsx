@@ -28,17 +28,18 @@ export default function About() {
           <AnimatedSection direction="left">
             <div className="space-y-5 text-slate-300 leading-relaxed text-base sm:text-lg">
               <p>
-                I'm a <span className="text-white font-semibold">backend & cloud-oriented Software Engineer</span> currently
-                at Purview India Consulting and Services, where I build, containerize, and deploy
-                production <span className="text-cyan-400">FastAPI microservices</span> across telemetry,
+                I'm a <span className="text-white font-semibold">full-stack developer</span> with a strong
+                backend core, currently at Purview India Consulting and Services, where I build, containerize,
+                and deploy production <span className="text-cyan-400">FastAPI services</span> across telemetry,
                 voice-AI, and content platforms.
               </p>
               <p>
-                My work spans the full backend lifecycle — designing async REST APIs, modeling data in{' '}
+                My work spans the full lifecycle — designing async REST APIs, modeling data in{' '}
                 <span className="text-cyan-400">PostgreSQL</span>, accelerating responses with{' '}
                 <span className="text-cyan-400">Redis</span>, decoupling workloads through{' '}
                 <span className="text-cyan-400">RabbitMQ</span>, and shipping everything in{' '}
-                <span className="text-cyan-400">Docker</span> containers with JWT security and health-check monitoring.
+                <span className="text-cyan-400">Docker</span> — then exposing clean JSON contracts that
+                I consume on the frontend with <span className="text-cyan-400">React</span> and modern JavaScript.
               </p>
               <p>
                 With a foundation in Electronics & Communication Engineering, I bring strong problem-solving
@@ -48,7 +49,7 @@ export default function About() {
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
-                {['Backend Engineering', 'Cloud & DevOps', 'API Architecture', 'System Design'].map((t) => (
+                {['Full-Stack Development', 'Backend Engineering', 'React Frontend', 'Cloud & DevOps', 'API Architecture'].map((t) => (
                   <span
                     key={t}
                     className="px-4 py-2 rounded-xl border border-cyan-500/20 bg-cyan-500/5 text-cyan-300 text-sm font-medium"
